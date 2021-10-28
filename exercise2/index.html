@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<title>WORKSHOP 1</title></head> 
+  
+
+
+<body>
+    <div id="title">
+        <p>
+            </p><h1>WORKSHOP 1</h1> <p></p><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+        <div id="toc">
+        <p>
+            </p><ol>
+            <li><a href="https://www.freelancer.com/articles/web-development/13-cool-tricks-for-html" target="_b"> html one 
+            </a></li><li><a href="https://web-design.lovetoknow.com/Cool_HTML_Codes">html two</a></li>
+            <li><a href="https://www.impactplus.com/blog/21-basic-html-codes-everyone-whos-not-a-developer-should-know">html three</a></li>
+            <li><a href="https://blog.duda.co/8-cool-html-tags-you-didn-t-know-existed#abbreviation">html four</a></li>
+            <li><a href="https://blog.duda.co/8-cool-html-tags-you-didn-t-know-existed">html five </a></li>
+            </ol>
+       
+        <p></p>
+        </div>
+        
+
+
+
+   
+
+        
+
+</div>
+
+
+
+        
+          
+    <p>
+    </p><h1> HTML ONE - COLOR BACKGROUND</h1>
+    <select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+        
+        <option value="black">black
+            </option><option value="orange">orange
+                </option><option value="flamingred">fuschia
+                    </option><option value="lightyellow">light yellow
+                        </option><option value="green">green
+                            </option><option value="cyan">cyan
+                                </option><option value="yellow">yellow
+                                    </option><option value="red">red
+                                        </option><option value="white">white</option>
+    </select>&nbsp;&nbsp;Background Color
+    
+    <br>
+    <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+        
+        <option value="black">black
+            </option><option value="orange">orange
+                </option><option value="flamingred">fuschia
+                    </option><option value="lightyellow">light yellow
+                        </option><option value="cyan">cyan
+                            </option><option value="yellow">yellow
+                                </option><option value="red">red
+                                    </option><option value="white">white</option>
+    </select>&nbsp;&nbsp;Text Color
+    
+    
+     
+    <p></p>
+
+
+
+
+<p> </p><h1> HTML TWO - COUNTDOWN</h1><p></p>
+
+<script type="text/javascript">
+
+    today = new Date();
+    
+    BigDay = new Date("December 25, 2020");
+    
+    msPerDay = 24 * 60 * 60 * 1000 ;
+    
+    timeLeft = (BigDay.getTime() - today.getTime());
+    
+    e_daysLeft = timeLeft / msPerDay;
+    
+    daysLeft = Math.floor(e_daysLeft);
+    
+    e_hrsLeft = (e_daysLeft - daysLeft)*24;
+    
+    hrsLeft = Math.floor(e_hrsLeft);
+    
+    minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+    
+    
+    document.write("There are only<BR> <H4>" + daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes left </H4> Until December 25th 2020<P>");
+    
+    </script>There are only<br> <h4>-305 days 11 hours and 12 minutes left </h4> Until December 25th 2020<p>
+
+
+
+
+
+      
+</p><p>
+    </p><h1> HTML THREE - UNDERLINING</h1>
+    <u>Look, we can underline!</u> <p></p>
+
+
+    <p>
+        </p><h1> HTML FOUR- METER</h1>
+        
+        <meter min="0" max="100" low="59" high="90" optimum="90" value="50">50%</meter>
+
+        
+    <p></p>
+
+<p>
+    </p><h1> HTML FIVE - DATA LIST</h1>
+    <label for="car-make">Choose a car make:</label>
+    <input list="car-makes" id="car-make" name="car-makes" placeholder="Select make..">
+    
+    <datalist id="car-makes">
+        <option value="BMW">
+        </option><option value="Tesla">
+        </option><option value="Toyota">
+        </option><option value="Volkswaggon">
+        </option><option value="Mazda">
+    </option></datalist>
+
+
+
+
+
+
+
+<p></p>
+
+
+
