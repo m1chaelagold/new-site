@@ -10,14 +10,14 @@ body {
 	width: 900px;
 	height: 556px;
 	margin: 100px auto;
-	background: grey;
+	background: gainsboro;
 	position: relative;}
 
 
 /*1st canvas */
 
 
-.canvas.gray{ background: #88A0A8;
+.canvas.gray{ background:cornsilk;
     z-index: -1;
 }
 
