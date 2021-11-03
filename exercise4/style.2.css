@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: grey;
+	position: relative;}
+
+
+/*1st canvas */
+
+
+.canvas.gray{ background: #88A0A8;
+    z-index: -1;
+}
+
+
+.object{position: absolute;
+}
+
+.object.bottle
+{width: 300px;
+    color: honeydew;
+height: 480px;
+bottom: 60px;
+left:200px;
+
+}
+
+
+.bottle.middle {width: 230px;
+    height: 430px;
+    border-radius: 10%;
+    background:chocolate;
+    position: absolute;
+    z-index: 2;
+    top:110px;
+    left:17px;
+        }
+    
+
+        .bottle.middle.contents
+        {height: 40px;
+            background-color: burlywood;
+            width:200px;
+            left: 30px;
+            top: 80px;
+            border-radius: 10px;
+            position:absolute;
+    
+            z-index: auto;
+     
+        }
+
+        .bottle.middle.lines
+{height: 6px; 
+    background-color: black;
+    top: 500px;
+}
+
+.bottle.middle.lines.upper
+{height: 6px; 
+    background-color: black;
+    top: 150px;
+
+
+}
+.bottle.middle.writing
+{ width: 200px;
+    height: 100px;
+    background: seashell;
+    border-radius: 100px / 50px;
+    top: 250px;
+    left: 30px;
+  }
+
+
