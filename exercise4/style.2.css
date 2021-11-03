@@ -82,3 +82,73 @@ left:200px;
   }
 
 
+
+
+/*2st canvas */
+
+
+.canvas.gray{ background:cornsilk;
+    z-index: -1;
+}
+
+
+.object{position: absolute;
+}
+
+.object.tomato
+{width: 300px;
+    color: honeydew;
+height: 480px;
+bottom: 60px;
+left:200px;
+
+}
+
+
+.object.tomato.full {width: 330px;
+    height: 330px;
+    border-radius: 100%;
+    background:rgb(110, 24, 24);
+    position: absolute;
+    z-index: 1;
+    top:100px;
+    left:17px;
+        }
+
+
+
+.object.tomato.full.seeds
+{background-color: rgb(32, 28, 28) 
+    ;
+    height: 330px;
+    width: 330px;
+    left:40px;
+    top: 110px;
+  
+}
+
+
+.object.tomato.stem
+{
+    
+    width:10px;
+    height: 10;
+    top: 20px;
+    border-top: 100px solid rgb(38, 39, 37);
+    border-radius: 100px;
+
+  }
+   
+
+
+.object.tomato.stem.other
+{
+width:8px;
+height: 10;
+top:40px;
+border-radius: 100px;
+border-top: 100px solid rgb(69, 114, 10);
+border-right: 100px solid transparent;
+left: 230px;
+transform: skewY(29px);
+z-index: 6;}
