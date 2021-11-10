@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Coding from Life</title>
+	<meta charset="utf-8" />
+<style>
+.parent
+{background-color: brown;
+    height: 100px;
+    width: 100px;
+margin: 400px;
+border-radius: 100%;
+}
+
+
+.child
+{background-color:burlywood;
+    height: 100px;
+    width: 100px;
+margin: 400px;
+border-radius: 100%;
+animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+
+
+
+}
+        
+.parent:hover .child    
+{
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="parent">
+    <div class="child"></div>
+</div>
+</body>
+</html>

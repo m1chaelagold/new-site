@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: gainsboro;
+	position: relative;}
+
+
+/*1st canvas */
+
+
+.canvas.gray{ background:cornsilk;
+    z-index: -1;
+}
+
+
+.object{position: absolute;
+}
+
+.object.bottle
+{width: 300px;
+    color: honeydew;
+height: 480px;
+bottom: 60px;
+left:200px;
+
+}
+
+
+.bottle.middle {width: 230px;
+    height: 430px;
+    border-radius: 10%;
+    background:chocolate;
+    position: absolute;
+    z-index: 2;
+    top:110px;
+    left:17px;
+        }
+    
+
+        .bottle.middle.contents
+        {height: 40px;
+            background-color: burlywood;
+            width:200px;
+            left: 30px;
+            top: 80px;
+            border-radius: 10px;
+            position:absolute;
+    
+            z-index: auto;
+     
+        }
+
+        .bottle.middle.lines
+{height: 6px; 
+    background-color: black;
+    top: 500px;
+}
+
+.bottle.middle.lines.upper
+{height: 6px; 
+    background-color: black;
+    top: 150px;
+
+
+}
+.bottle.middle.writing
+{ width: 200px;
+    height: 100px;
+    background: seashell;
+    border-radius: 100px / 50px;
+    top: 250px;
+    left: 30px;
+  }
+
+
+
+
+/*2st canvas */
+
+
+.canvas.gray{ background:cornsilk;
+    z-index: -1;
+}
+
+
+.object{position: absolute;
+}
+
+.object.tomato
+{width: 300px;
+    color: honeydew;
+height: 480px;
+bottom: 60px;
+left:200px;
+
+}
+
+
+.object.tomato.full {width: 330px;
+    height: 330px;
+    border-radius: 100%;
+    background:rgb(110, 24, 24);
+    position: absolute;
+    z-index: 1;
+    top:100px;
+    left:17px;
+        }
+
+
+
+.object.tomato.full.seeds
+{background-color: rgb(32, 28, 28) 
+    ;
+    height: 330px;
+    width: 330px;
+    left:40px;
+    top: 110px;
+  
+}
+
+
+.object.tomato.stem
+{
+    
+    width:10px;
+    height: 10;
+    top: 20px;
+    border-top: 100px solid rgb(38, 39, 37);
+    border-radius: 100px;
+
+  }
+   
+
+
+.object.tomato.stem.other
+{
+width:8px;
+height: 10;
+top:40px;
+border-radius: 100px;
+border-top: 100px solid rgb(69, 114, 10);
+border-right: 100px solid transparent;
+left: 230px;
+transform: skewY(29px);
+z-index: 6;}
