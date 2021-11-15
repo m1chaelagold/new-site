@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <style>
+
+  
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -13,6 +15,42 @@ input[type=text], select {
   
   text-align: center;
 }
+
+
+.topnav a {
+      margin: 15px;
+        text-decoration: none;
+        display:-webkit-inline-flex;
+      text-align: center;
+        font-family: sans-serif;
+        font-size: 15px;
+      color: rgb(3, 2, 2);
+        display:-ms-inline-grid;}
+      
+    
+    .arrows
+    {margin-top: -35px;
+      font-family: sans-serif;
+      font-size: 15px;
+    color: rgb(3, 2, 2);
+      text-align: right;}
+    
+      .SECONDARYBOX
+      {margin: 15px;
+        text-decoration: none;
+      text-align: center;
+        font-family: sans-serif;
+        font-size: 25px;
+      color: rgb(3, 2, 2);}
+    
+      .SECONDARYBOX
+      {text-align: left;
+        font-size: 15px; }
+    
+      .line
+      {border-bottom: 1px solid rgb(0, 0, 0);
+        width: 100%;}
+
 
 h3 {  font-family: 'Courier New', Courier, monospace;
 text-align: center;
@@ -41,13 +79,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #3d3739;
+  background-color: #4b6b86;
   text-align: center;
 }
 
-div {
+.other {
   border-radius: 5px;
-  background-color: #637049;
+  background-color: #7b9ca1;
   color: rgb(24, 23, 22);
   padding: 20px;
   font-family: 'Courier New', Courier, monospace;
@@ -56,11 +94,41 @@ div {
 </style>
 <body>
 
-<h3>where the sidewalk ends 4. 5</h3>
-<h4>shel silverstein
+
+  <div class="topnav">
+    <nav>
+    <a class="home" href="/index.html">home</a>
+    <a class="about" href="/about.html">about</a>
+  </nav>
+  
+  </div>
+  <div class="arrows">
+  <nav>
+    <a class="previous" href="LEVELFOUR.FOUR.HTML"><</a>
+  <a class="next" href="LEVELFIVE.ONE.HTML">></a>
+  
+  </nav>
+  </div>
+  <br>
+  
+  <div class="line"
+  ></div>
+  <body>
+    <div class="line"
+    ></div>
+  
+  <DIV class="SECONDARYBOX">where the sidewalk ends 4.5
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+  by shel silverstein</DIV>
+  <div class="line"
+  ></div>
+  <body>
+    <div class="line"
+    ></div>
+    <br>
 
 </h4>
-<div>
+<div class="other">
   <form action="/action_page.php">
     <label for="fname">there is a place</label>
     <input type="text" id="fname" name="firstname" placeholder="where the sidewalk ends">
