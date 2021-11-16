@@ -37,15 +37,141 @@
       {border-bottom: 1px solid rgb(0, 0, 0);
         width: 100%;}
 
-    .grass {
+        .body
+        {background-color: black;
+        width: 100%;
+
+      height: 600px;}
+ 
+
+        .gradient-text {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: justify;
+
+  background-image: linear-gradient(60deg, #0080ff, #ffa200 , #ff0040,  #f2ff3a);
+  background-clip: text;
+  color: transparent;
+}
+
+
+#gradient {
   width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  position: absolute;
+  background: linear-gradient(270deg, 0);
+  background-size: 800% 800%;
+  -webkit-animation: colors 30s ease infinite;
+  -moz-animation: colors 30s ease infinite;
+  animation: colors 30s ease infinite;
+}
 
-  height: 20px;
-  background-color: red;
-  position: relative;
+@-webkit-keyframes colors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes colors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes colors { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
+
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #bbbbbb;
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        400deg,
+        #000000 16.666%, 
+  );
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 
 }
+
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+
+
+
+header {
+  margin-top: 100em;
+  margin-top: calc(50vh - 3em);
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 605px;
+}
+
+
+
+
+
+
 
 </style>
     <title>where the sidewalk ends</title>
@@ -87,15 +213,29 @@
     <div class="line"
     ></div>
     <br>
-    <div class="bodytext">
-    There is a place where the sidewalk ends and before the street begins, and there 
-    </div>
-  
-    
-    <div class="grass">  the grass grows soft and white,</div>
 
+
+<div class="
+
+"></div>
+<div class="body">
+
+
+
+  <div class="gradient-text">
+
+
+
+<br><br><br>
+<br><br><br>
+    There is a place where the sidewalk ends and before the street begins, and there 
    and there the sun burns crimson bright, and there the moon-bird rests from his flight to cool in the peppermint wind. Let us leave this place where the smoke blows black and the dark street winds and bends. Past the pits where the asphalt flowers grow
 we shall walk with a walk that is measured and slow and watch where the chalk-white arrows go to the place where the sidewalk ends. Yes we'll walk with a walk that is measured and slow, and we'll go where the chalk-white arrows go, for the children, they mark, and the children, they know, the place where the sidewalk ends. 
 
+  </div>
+
+
+
+</div>
 
  </body>
