@@ -2,52 +2,28 @@
 <html>
 
 <head>
-    <style>
-  #egg {
-      display: block;
-      width: 126px;
-      margin-left: 100px;
-      margin-top: 200px;
-      height: 180px;   animation-name:spin;
-      animation-duration: 10000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      background-color: rgb(223, 200, 200);
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-      background-color: rgb(72, 123, 129);
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    }
-    #egg:hover {
-      display: block;
-      width: 126px;
-      margin-left: 100px;
-      margin-top: 200px;
-      height: 180px;
-      animation-name:spin;
-      animation-duration: 10000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      background-color: rgb(181, 216, 233);
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    }
+  <style>
+  .css-selector {
+    background: linear-gradient(101deg, #246655, #1e1a1a, #f4e9d6);
+    background-size: 600% 600%;
 
-
-    @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
 }
 
-
-
-
-
-</style>
-</head>
-
-
-<a id="egg" href="https://stickyglass.com"></a>
-<a id="egg" href="https://stickyglass.com"></a>
+@-webkit-keyframes AnimationName {
+    0%{background-position:65% 0%}
+    50%{background-position:36% 100%}
+    100%{background-position:65% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:65% 0%}
+    50%{background-position:36% 100%}
+    100%{background-position:65% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:65% 0%}
+    50%{background-position:36% 100%}
+    100%{background-position:65% 0%}
+}</style>
